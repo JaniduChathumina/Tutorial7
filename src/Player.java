@@ -2,34 +2,41 @@ public class Player {
     private String Name;
     private int Age;
     private String Type;
-    private int Statics;
+    private int Statistics;
 
-    public Player(String Name,int Age, String Type, int Statics){
-        this.Name=Name;
-        this.Age=Age;
-        this.Type=Type;
-        this.Statics=Statics;
-
-
+    public Player(){
     }
-    void getBatting(){
-        double rate=this.Statics/15;
-        System.out.println("Run rate is"+rate);
-
+    public Player(String Name,int Age, String Type, int Statistics) {
+        this.Name = Name;
+        this.Age = Age;
+        this.Type = Type;
+        this.Statistics = Statistics;
+    }
+    public void setPlayerDetails(String Name, int Age, String Type, int Statistics) {
+        this.Name = Name;
+        this.Age = Age;
+        this.Type = Type;
+        this.Statistics = Statistics;
     }
 
-    void getPlayerDetails(){
+    public void getPlayerDetails(){
+        System.out.println("");
         System.out.println("Player Name   : "+Name);
         System.out.println("Player Age    : "+Age);
         System.out.println("Player Type   : "+Type);
-        System.out.println("Player Statics: "+Statics);
+        System.out.println("Player Statics: "+Statistics);
+        System.out.println("");
     }
 
-    void getPlayerType(){
+    public int getStatistics(){
+        return Statistics;
+    }
+
+    public void getPlayerType(){
         System.out.println("Player Type: "+Type);
     }
 
-    void getBestPreformence(int get){
+    public void getBestPerfomance(){
 
     }
 
